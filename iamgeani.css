@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.box{
+    height: 300px;
+    width: 300px;
+    background-image: url("Image/nature.jpg");
+    animation-name: imageAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 4s;
+    position: relative;
+}
+@keyframes imageAnimation{
+   0%{left: 0px; top: 0px;}
+   25%{background-image: url("Image/sea.jpg"); left: 400px; top: 0px;}
+   50%{background-image: url("Image/black.jpg"); left: 400px; top: 400px;}
+   75%{background-image: url("Image/flower.jpg"); left: 0px; top: 400px;}
+   100%{background-image: url("Image/nature.jpg"); left: 0px; top: 0px;}
+}
